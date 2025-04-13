@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography Gallery</title>
+    <link rel="stylesheet" href="dan.css">
+</head>
+<body onload="initializeGallery()">
+    <header>
+        <h1>Nature Photography Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#main-content">Skip to Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="gallery">
+            <figure tabindex="0" 
+                    onmouseover="highlightImage(this)" 
+                    onmouseleave="unhighlightImage(this)"
+                    onfocus="highlightImage(this)"
+                    onblur="unhighlightImage(this)">
+                <img src="images/forest.jpg" alt="Misty forest with sunlight filtering through trees">
+                <figcaption>Forest Landscape</figcaption>
+            </figure>
+            
+            <!-- 5 more image figures with similar structure -->
+            
+        </div>
+    </main>
+
+    <script src="dan.js"></script>
+</body>
+</html>
